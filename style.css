@@ -6,9 +6,9 @@
     font-family: 'Arial', sans-serif;
 }
 
-/* Dark Theme Background */
+/* Electric Charcoal Theme Background */
 body {
-    background-color: #1e1e1e;
+    background-color: #121212;
     color: #ffffff;
     line-height: 1.6;
 }
@@ -19,7 +19,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 16px 32px;
-    background-color: #1e1e1e;
+    background-color: #121212;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -29,10 +29,10 @@ body {
 .navbar .logo {
     font-size: 24px;
     font-weight: bold;
-    color: #00ff99;
+    color: #00bcd4;
 }
 .navbar .logo span {
-    color: #00ff99; /* Optional highlight color for part of your name */
+    color: #00bcd4; /* Optional highlight color for part of your name */
 }
 
 /* Right Side - Navigation Links */
@@ -42,15 +42,14 @@ body {
     gap: 55px;
 }
 .navbar .nav-links li a {
-    color: #00ff99;
+    color: #00bcd4;
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
 }
-.navbar .nav-links li a:hover{
+.navbar .nav-links li a:hover {
     color: #ffffff;
 }
-
 
 /* Page Sections */
 section {
@@ -61,7 +60,7 @@ section {
 section h1 {
     text-align: center;
     font-size: 40px;
-    color: #00ff99;
+    color: #00bcd4;
     margin-bottom: 16px;
 }
 
@@ -81,7 +80,7 @@ section h1 {
 }
 .about-content .subtitle {
     font-size: 20px;
-    color: #aaaaaa;
+    color: #b0bec5;
 }
 .about-content h1 {
     font-size: 40px;
@@ -89,11 +88,11 @@ section h1 {
     margin: 16px 0;
 }
 .about-content h1 .highlight {
-    color: #00ff99;
+    color: #00bcd4;
 }
 .about-content .description {
     font-size: 20px;
-    color: #cccccc;
+    color: #b0bec5;
     margin-bottom: 16px;
     margin-top: 4px;
     margin-right: 100px;
@@ -101,7 +100,7 @@ section h1 {
 
 /* Right Side: Profile Image */
 .profile-image {
-    border: 5px solid #00ff99;
+    border: 5px solid #00bcd4;
     border-radius: 50%;
     overflow: hidden;
     width: 500px;
@@ -123,8 +122,8 @@ section h1 {
     padding-top: 8px;
 }
 .skill {
-    background-color: #2a2a2a;
-    border: 2px solid #00ff99;
+    background-color: #1c1c1c;
+    border: 2px solid #00bcd4;
     padding: 16px 32px;
     border-radius: 10px;
     font-size: 19px;
@@ -137,14 +136,14 @@ section h1 {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    color: #cccccc;
+    color: #b0bec5;
 }
 .education-item h2 {
     font-size: 24px;
-    color: #00ff99;
+    color: #00bcd4;
 }
 .education-item p {
-    color: #aaaaaa;
+    color: #b0bec5;
 }
 
 /* Contact Form */
@@ -152,13 +151,13 @@ form {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    background-color: #2a2a2a;
+    background-color: #1c1c1c;
     padding: 32px;
     border-radius: 10px;
 }
 form label {
     font-size: 16px;
-    color: #00ff99;
+    color: #00bcd4;
 }
 form input, form textarea {
     padding: 13px;
@@ -170,20 +169,20 @@ form input, form textarea {
 }
 form button {
     padding: 13px;
-    background-color: #00ff99;
-    color: #1e1e1e;
+    background-color: #00bcd4;
+    color: #121212;
     cursor: pointer;
     border: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 form button:hover {
-    background-color: #00cc77;
+    background-color: #66d4e8;
 }
 
 /* Profile Image Styling */
 .profile-image {
-    border: 5px solid #00ff99;
+    border: 5px solid #00bcd4;
     border-radius: 50%;
     overflow: hidden;
     width: 500px;
@@ -196,21 +195,20 @@ form button:hover {
     object-fit: cover;
 }
 
-
 /* Social Links Section */
-.social-section{
+.social-section {
     text-align: center;
     padding: 48px 32px;
-    color: #ffffff 
+    color: #ffffff;
 }
 .social-section h1 {
     font-size: 40px;
-    color: #00ff99;
+    color: #00bcd4;
     margin-bottom: 16px;
 }
 .social-section p {
     font-size: 20px;
-    color: #cccccc;
+    color: #b0bec5;
     margin-bottom: 32px;
 }
 .social-icons {
@@ -220,7 +218,7 @@ form button:hover {
 }
 .social-link {
     display: inline-block;
-    background-color: #2a2a2a;
+    background-color: #1c1c1c;
     padding: 16px 24px;
     border-radius: 10px;
     text-decoration: none;
@@ -232,13 +230,12 @@ form button:hover {
 .social-link i {
     margin-right: 8px;
     font-size: 20px;
-    color: #00ff99;
+    color: #00bcd4;
 }
 .social-link:hover {
-    background-color: #00ff99;
-    color: #1e1e1e;
+    background-color: #00bcd4;
+    color: #121212;
 }
-
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
