@@ -128,75 +128,98 @@ section h1 {
     padding-top: 16px;
 }
 
-/* Default Skill Box Style */
+/* Skill Box Default Style */
 .skill {
     background-color: #1c1c1c; /* Default dark background */
-    width: 125px;
-    height: 125px;
-    border: none;
-    padding: 32px; /* Extra padding for icons */
-    border-radius: 10px;
-    font-size: 48px; /* Icon size */
-    color: #ffffff;
-    text-align: center;
-    font-weight: bold;
-    transition: background 0.5s ease, transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px; /* Rounded corners */
+    width: 150px; /* Square box */
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth hover effects */
 }
 
-#skl {
-    font-size: 20px;
-    color: #b0bec5;
-    margin-bottom: 8px;
-    font-family: 'poppins', sans-serif;    
-}
-
-/* HTML Skill Gradient */
+/* Apply Different Gradient Animations for Each Skill */
 .skill:nth-child(1):hover {
-    background: linear-gradient(135deg, #e44d26, #ffcc4d, #f58529);
-    transform: scale(1.1);
-    box-shadow: 0px 4px 15px rgba(228, 77, 38, 0.5);
+    animation: gradient-animation-html 6s ease infinite; /* Smoother easing and longer duration */
+    transform: scale(1.1); /* Slight scaling effect */
+    box-shadow: 0px 4px 15px rgba(228, 77, 38, 0.5); /* Subtle shadow */
 }
 
-/* CSS Skill Gradient */
 .skill:nth-child(2):hover {
-    background: linear-gradient(135deg, #2965f1, #33ccff, #66ffff);
+    animation: gradient-animation-css 6s ease infinite;
     transform: scale(1.1);
     box-shadow: 0px 4px 15px rgba(41, 101, 241, 0.5);
 }
 
-/* C Skill Gradient */
 .skill:nth-child(3):hover {
-    background: linear-gradient(135deg, #555555, #0078d7, #00c4ff);
+    animation: gradient-animation-c 6s ease infinite;
     transform: scale(1.1);
     box-shadow: 0px 4px 15px rgba(85, 85, 85, 0.5);
 }
 
-/* Python Skill Gradient */
 .skill:nth-child(4):hover {
-    background: linear-gradient(135deg, #3776ab, #ffd343, #ffcc00);
+    animation: gradient-animation-python 6s ease infinite;
     transform: scale(1.1);
     box-shadow: 0px 4px 15px rgba(55, 118, 171, 0.5);
 }
 
-/* Icon Styling */
-.skill i {
-    font-size: 48px;
-    transition: color 0.3s ease;
-}
-.skill:hover i {
-    color: #ffffff; /* Ensure white color on hover for consistency */
-}
-
-/* Hover Effects for All Skill Boxes */
-.skill:hover {
-    transform: scale(1.1); /* Slight Zoom Effect */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add Shadow */
+/* HTML Gradient Animation */
+@keyframes gradient-animation-html {
+    0% {
+        background: linear-gradient(135deg, #e44d26, #f16529);
+    }
+    50% {
+        background: linear-gradient(135deg, #f16529, #e44d26);
+    }
+    100% {
+        background: linear-gradient(135deg, #e44d26, #f16529);
+    }
 }
 
+/* CSS Gradient Animation */
+@keyframes gradient-animation-css {
+    0% {
+        background: linear-gradient(135deg, #2965f1, #33ccff);
+    }
+    50% {
+        background: linear-gradient(135deg, #33ccff, #2965f1);
+    }
+    100% {
+        background: linear-gradient(135deg, #2965f1, #33ccff);
+    }
+}
 
+/* C Gradient Animation */
+@keyframes gradient-animation-c {
+    0% {
+        background: linear-gradient(135deg, #555555, #0078d7);
+    }
+    50% {
+        background: linear-gradient(135deg, #0078d7, #555555);
+    }
+    100% {
+        background: linear-gradient(135deg, #555555, #0078d7);
+    }
+}
+
+/* Python Gradient Animation */
+@keyframes gradient-animation-python {
+    0% {
+        background: linear-gradient(135deg, #3776ab, #ffd343);
+    }
+    50% {
+        background: linear-gradient(135deg, #ffd343, #3776ab);
+    }
+    100% {
+        background: linear-gradient(135deg, #3776ab, #ffd343);
+    }
+}
 /* Education Section */
 .education-section {
     text-align: center;
