@@ -33,7 +33,7 @@ body {
     font-size: 30px;
     font-weight: 600; /* Use bold weight for the logo */
     color: #00bcd4;
-    margin-left: 100px;
+    margin-left: 40px;
 }
 
 /* Right Side - Navigation Links */
@@ -112,12 +112,11 @@ section h1 {
 
 /* Right Side: Profile Image */
 .profile-image {
-    border: 5px solid #00bcd4; /* Your border color */
+    border: 5px solid #00bcd4;
     border-radius: 50%;
     overflow: hidden;
-    width: 300px; /* Image width */
-    height: 300px; /* Image height */
-    margin-left: 20px; /* Adds extra spacing */
+    width: 500px;
+    height: 500px;
 }
 .profile-image img {
     width: 100%;
