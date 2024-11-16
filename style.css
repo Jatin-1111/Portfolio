@@ -146,8 +146,8 @@ section h1 {
 .skill {
     background-color: #1c1c1c; /* Default dark background */
     border-radius: 10px; /* Rounded corners */
-    width: 150px; /* Square box */
-    height: 150px;
+    width: 125px; /* Square box */
+    height: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
