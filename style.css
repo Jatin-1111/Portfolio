@@ -86,11 +86,17 @@ section h1 {
     margin: 0 auto;
     gap: 50px; /* Add spacing between text and image */
 }
+
 .about-content .subtitle {
     font-size: 20px;
     color: #b0bec5;
-    text-align:justify;
+    text-align: justify;
     font-family: 'poppins', sans-serif;
+}
+
+.description .subtitle{
+    position: relative;
+    right: 0px;
 }
 .about-content h1 {
     font-size: 40px;
@@ -107,6 +113,15 @@ section h1 {
     text-align: justify;
     font-family: 'poppins', sans-serif;
     width: 550px;
+}
+.about-content{
+    position: relative;
+    right: 55px;
+    top: 35px;
+}
+.profile-image{
+    position: relative;
+    left: 20px;
 }
 
 
@@ -146,8 +161,8 @@ section h1 {
 .skill {
     background-color: #1c1c1c; /* Default dark background */
     border-radius: 10px; /* Rounded corners */
-    width: 125px; /* Square box */
-    height: 125px;
+    width: 150px; /* Square box */
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -547,19 +562,108 @@ form button:active {
 .social-link:hover i {
     color: #ffffff; /* Ensure the icon remains white on hover */
 }
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
+/* Responsive Adjustments for Mobile (OnePlus Nord 4) */
+@media screen and (max-width: 1080px) {
+    /* Navbar */
+    .navbar {
+        flex-direction: row; /* Ensure items remain in a row */
+        justify-content: space-between; /* Align logo to the left and links to the right */
+        align-items: center;
+        padding: 16px 8px; /* Adjust padding */
     }
-    .main-section {
-        flex-direction: column;
+
+    .navbar .nav-links {
+        flex-direction: row; /* Keep navigation links horizontal */
+        gap: 16px; /* Reduce gap between links */
     }
-    .about-container {
-        flex-direction: column;
+
+    .navbar .nav-links li a {
+        font-size: 14px; /* Adjust font size for links */
     }
+
+    /*About section*/
+    .about-section {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align content */
+    }
+
     .profile-image {
-        width: 150px;
-        height: 150px;
+        order: -1; /* Move the image to the top */
+        max-width: 200px; /* Adjust image size for smaller screens */
+        height: auto;
+        margin-bottom: 16px; /* Add spacing below the image */
+    }
+
+    .about-content {
+        order: 1; /* Keep text below the image */
+        text-align: center; /* Center-align text */
+        margin: 0; /* Remove additional margins */
+        padding: 0 16px; /* Add some padding for better readability */
+    }
+    
+    /* Skills Section */
+    .skills-container {
+        flex-direction: column; /* Stack skills vertically */
+        gap: 16px; /* Add spacing between skill boxes */
+        padding: 16px; /* Reduce padding */
+    }
+
+    .skill {
+        width: 90%; /* Full width for skill boxes */
+        height: auto;
+        font-size: 24px; /* Adjust font size for icons/text */
+        margin: 0 auto; /* Center the skill boxes */
+    }
+
+    /* Education Section */
+    .education-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 24px; /* Add spacing between education items */
+        padding: 16px; /* Adjust padding */
+    }
+
+    .education-item {
+        text-align: center; /* Center-align education content */
+        width: 90%; /* Reduce width for smaller screens */
+        margin: 0 auto; /* Center the items */
+    }
+
+    .education-item h2 {
+        font-size: 18px; /* Adjust heading size */
+    }
+
+    .education-item p {
+        font-size: 14px; /* Adjust paragraph size */
+    }
+
+    /* Contact Section */
+    form {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 16px; /* Adjust padding */
+        margin: 0 auto; /* Center the form */
+    }
+
+    form label {
+        font-size: 14px; /* Adjust label size */
+    }
+
+    form input, form textarea {
+        font-size: 14px; /* Adjust input font size */
+    }
+
+    form button {
+        font-size: 16px; /* Adjust button font size */
+    }
+
+    /* Social Links Section */
+    .social-icons {
+        flex-direction: column; /* Stack icons vertically */
+        gap: 16px; /* Add spacing between icons */
+    }
+
+    .social-link {
+        width: 60px; /* Adjust size of social boxes */
+        height: 60px;
+        font-size: 20px; /* Adjust icon size */
     }
 }
