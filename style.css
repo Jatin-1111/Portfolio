@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* General Reset */
 * {
     margin: 0;
@@ -23,29 +25,29 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    font-family: 'Poppins', sans-serif; /* New Font */
 }
 
 /* Left Side - Name */
 .navbar .logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: 600; /* Use bold weight for the logo */
     color: #00bcd4;
-}
-.navbar .logo span {
-    color: #00bcd4; /* Optional highlight color for part of your name */
+    margin-left: 40px;
 }
 
 /* Right Side - Navigation Links */
 .navbar .nav-links {
     list-style: none;
     display: flex;
-    gap: 55px;
+    gap: 60px;
+    font-weight: 600; /* Regular weight for links */
 }
 .navbar .nav-links li a {
     color: #00bcd4;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 600;
 }
 .navbar .nav-links li a:hover {
     color: #ffffff;
@@ -81,22 +83,26 @@ section h1 {
 .about-content .subtitle {
     font-size: 20px;
     color: #b0bec5;
+    text-align:justify;
+    font-family: 'poppins', sans-serif;
 }
 .about-content h1 {
     font-size: 40px;
     color: #ffffff;
-    margin: 16px 0;
+    margin: 16px;
 }
 .about-content h1 .highlight {
     color: #00bcd4;
+    font-family: 'poppins', sans-serif;
 }
 .about-content .description {
     font-size: 20px;
     color: #b0bec5;
-    margin-bottom: 16px;
-    margin-top: 4px;
-    margin-right: 100px;
+    text-align: justify;
+    font-family: 'poppins', sans-serif;
+    width: 550px;
 }
+
 
 /* Right Side: Profile Image */
 .profile-image {
@@ -117,67 +123,230 @@ section h1 {
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 16px;
     justify-content: center;
-    padding-top: 8px;
-}
-.skill {
-    background-color: #1c1c1c;
-    border: 2px solid #00bcd4;
-    padding: 16px 32px;
-    border-radius: 10px;
-    font-size: 19px;
-    color: #ffffff;
-    text-align: center;
+    padding-top: 16px;
 }
 
+/* Default Skill Box Style */
+.skill {
+    background-color: #1c1c1c; /* Default dark background */
+    width: 125px;
+    height: 125px;
+    border: none;
+    padding: 32px; /* Extra padding for icons */
+    border-radius: 10px;
+    font-size: 48px; /* Icon size */
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.5s ease, transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skl {
+    font-size: 20px;
+    color: #b0bec5;
+    margin-bottom: 8px;
+    font-family: 'poppins', sans-serif;    
+}
+
+/* HTML Skill Gradient */
+.skill:nth-child(1):hover {
+    background: linear-gradient(135deg, #e44d26, #ffcc4d, #f58529);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(228, 77, 38, 0.5);
+}
+
+/* CSS Skill Gradient */
+.skill:nth-child(2):hover {
+    background: linear-gradient(135deg, #2965f1, #33ccff, #66ffff);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(41, 101, 241, 0.5);
+}
+
+/* C Skill Gradient */
+.skill:nth-child(3):hover {
+    background: linear-gradient(135deg, #555555, #0078d7, #00c4ff);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(85, 85, 85, 0.5);
+}
+
+/* Python Skill Gradient */
+.skill:nth-child(4):hover {
+    background: linear-gradient(135deg, #3776ab, #ffd343, #ffcc00);
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(55, 118, 171, 0.5);
+}
+
+/* Icon Styling */
+.skill i {
+    font-size: 48px;
+    transition: color 0.3s ease;
+}
+.skill:hover i {
+    color: #ffffff; /* Ensure white color on hover for consistency */
+}
+
+/* Hover Effects for All Skill Boxes */
+.skill:hover {
+    transform: scale(1.1); /* Slight Zoom Effect */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add Shadow */
+}
+
+
 /* Education Section */
+.education-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.education-section h1 {
+    font-size: 40px;
+    color: #00bcd4;
+    margin-bottom: 40px;
+    font-family: 'poppins', sans-serif;
+}
+
+/* Education Container */
 .education-container {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    color: #b0bec5;
+    gap: 32px;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'poppins', sans-serif;
 }
+
+.education-item {
+    background: linear-gradient(135deg, #1c1c1c, #333);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px 40px;
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
+    color: #b0bec5;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Education Item Icon */
+.education-item i {
+    font-size: 40px;
+    color: #00bcd4;
+    flex-shrink: 0;
+}
+
+/* Education Item Text */
 .education-item h2 {
     font-size: 24px;
-    color: #00bcd4;
+    color: #ffffff;
+    margin: 0;
 }
-.education-item p {
+
+#clg{
     color: #b0bec5;
+    margin: 5px 0 0 0;
+    margin-left: 140px;
+}
+
+
+/* Contact Form Section */
+section {
+    text-align: center;
+    padding: 50px 20px;
+    color: #ffffff;
+}
+
+section h1 {
+    font-size: 40px;
+    color: #00bcd4;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'poppins', sans-serif;
 }
 
 /* Contact Form */
 form {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    background-color: #1c1c1c;
-    padding: 32px;
-    border-radius: 10px;
+    gap: 20px;
+    background: linear-gradient(135deg, #1c1c1c, #333);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
+
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+/* Form Labels */
 form label {
-    font-size: 16px;
+    font-size: 18px;
     color: #00bcd4;
+    font-weight: bold;
+    text-align: left;
 }
+
+/* Input Fields */
 form input, form textarea {
-    padding: 13px;
-    border: 1px solid #333;
-    border-radius: 5px;
+    padding: 15px;
+    border: 2px solid #00bcd4;
+    border-radius: 8px;
     font-size: 16px;
-    background-color: #333;
+    background-color: #1c1c1c;
     color: #ffffff;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
+
+form input:focus, form textarea:focus {
+    border-color: #66d4e8;
+    box-shadow: 0 0 5px rgba(102, 212, 232, 0.8);
+    outline: none;
+}
+
+/* Submit Button */
 form button {
-    padding: 13px;
-    background-color: #00bcd4;
-    color: #121212;
+    padding: 15px;
+    font-size: 18px;
+    background: linear-gradient(135deg, #00bcd4, #66d4e8);
+    color: #ffffff;
+    font-weight: bold;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
 }
+
 form button:hover {
-    background-color: #66d4e8;
+    background: linear-gradient(135deg, #66d4e8, #00bcd4);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(102, 212, 232, 0.5);
+}
+
+form button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+.lbl{
+    font-family: 'poppins', sans-serif;
 }
 
 /* Profile Image Styling */
@@ -201,42 +370,142 @@ form button:hover {
     padding: 48px 32px;
     color: #ffffff;
 }
+
 .social-section h1 {
     font-size: 40px;
     color: #00bcd4;
     margin-bottom: 16px;
+    font-family: 'poppins', sans-serif;
 }
-.social-section p {
-    font-size: 20px;
-    color: #b0bec5;
-    margin-bottom: 32px;
+
+.social-section p{
+    font-family: 'poppins', sans-serif;
 }
+
 .social-icons {
     display: flex;
     justify-content: center;
     gap: 24px;
-}
-.social-link {
-    display: inline-block;
-    background-color: #1c1c1c;
-    padding: 16px 24px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-    transition: background-color 0.3s, color 0.3s;
-}
-.social-link i {
-    margin-right: 8px;
-    font-size: 20px;
-    color: #00bcd4;
-}
-.social-link:hover {
-    background-color: #00bcd4;
-    color: #121212;
+    margin-top: 15px;
 }
 
+/* Default Style for Social Links */
+.social-link {
+    display: inline-block;
+    padding: 20px;
+    width: 100px; /* Square dimensions */
+    height: 100px; /* Square dimensions */
+    border-radius: 10px; /* Slightly rounded edges */
+    text-decoration: none;
+    font-size: 40px; /* Icon size */
+    color: #ffffff;
+    background: #1c1c1c; /* Default dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+/* Instagram Hover with Smooth Animated Gradient */
+.social-link.instagram:hover {
+    animation: gradient-animation-instagram 6s ease infinite;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(245, 133, 41, 0.8);
+}
+
+/* GitHub Hover with Smooth Animated Gradient */
+.social-link.github:hover {
+    animation: gradient-animation-github 6s ease infinite;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* LinkedIn Hover with Smooth Animated Gradient */
+.social-link.linkedin:hover {
+    animation: gradient-animation-linkedin 6s ease infinite;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 119, 181, 0.8);
+}
+
+/* Instagram Gradient Animation */
+@keyframes gradient-animation-instagram {
+    0% {
+        background: linear-gradient(90deg, #f58529, #dd2a7b, #8134af, #515bd4);
+        background-size: 400% 400%;
+    }
+    25% {
+        background: linear-gradient(90deg, #dd2a7b, #8134af, #515bd4, #f58529);
+        background-size: 400% 400%;
+    }
+    50% {
+        background: linear-gradient(90deg, #8134af, #515bd4, #f58529, #dd2a7b);
+        background-size: 400% 400%;
+    }
+    75% {
+        background: linear-gradient(90deg, #515bd4, #f58529, #dd2a7b, #8134af);
+        background-size: 400% 400%;
+    }
+    100% {
+        background: linear-gradient(90deg, #f58529, #dd2a7b, #8134af, #515bd4);
+        background-size: 400% 400%;
+    }
+}
+
+/* GitHub Gradient Animation */
+@keyframes gradient-animation-github {
+    0% {
+        background: linear-gradient(90deg, #000000, #333333, #555555, #777777);
+        background-size: 400% 400%;
+    }
+    25% {
+        background: linear-gradient(90deg, #333333, #555555, #777777, #000000);
+        background-size: 400% 400%;
+    }
+    50% {
+        background: linear-gradient(90deg, #555555, #777777, #000000, #333333);
+        background-size: 400% 400%;
+    }
+    75% {
+        background: linear-gradient(90deg, #777777, #000000, #333333, #555555);
+        background-size: 400% 400%;
+    }
+    100% {
+        background: linear-gradient(90deg, #000000, #333333, #555555, #777777);
+        background-size: 400% 400%;
+    }
+}
+
+/* LinkedIn Gradient Animation */
+@keyframes gradient-animation-linkedin {
+    0% {
+        background: linear-gradient(90deg, #0077b5, #005f9e, #004e87, #0077b5);
+        background-size: 400% 400%;
+    }
+    25% {
+        background: linear-gradient(90deg, #005f9e, #004e87, #0077b5, #005f9e);
+        background-size: 400% 400%;
+    }
+    50% {
+        background: linear-gradient(90deg, #004e87, #0077b5, #005f9e, #004e87);
+        background-size: 400% 400%;
+    }
+    75% {
+        background: linear-gradient(90deg, #0077b5, #004e87, #005f9e, #0077b5);
+        background-size: 400% 400%;
+    }
+    100% {
+        background: linear-gradient(90deg, #005f9e, #0077b5, #004e87, #005f9e);
+        background-size: 400% 400%;
+    }
+}
+
+/* Icon Styling */
+.social-link i {
+    transition: color 0.3s ease;
+}
+.social-link:hover i {
+    color: #ffffff; /* Ensure the icon remains white on hover */
+}
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .navbar ul {
