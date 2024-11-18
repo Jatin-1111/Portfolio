@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial';
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Electric Charcoal Theme Background */
@@ -152,6 +152,7 @@ section h1 {
 #skl{
     font-family: 'poppins', sans-serif;
     color: #b0bec5;
+    font-size: 20px;
 }
 #hd{
     font-family: 'poppins', sans-serif;
@@ -436,6 +437,8 @@ form button:active {
 .social-section p{
     font-family: 'poppins', sans-serif;
     color: #b0bec5;
+    font-size: 16px;
+    padding: 10px;
 }
 
 .social-icons {
@@ -449,13 +452,13 @@ form button:active {
 .social-link {
     display: inline-block;
     padding: 20px;
-    width: 100px; /* Square dimensions */
-    height: 100px; /* Square dimensions */
-    border-radius: 10px; /* Slightly rounded edges */
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
     text-decoration: none;
-    font-size: 40px; /* Icon size */
+    font-size: 40px;
     color: #ffffff;
-    background: #1c1c1c; /* Default dark background */
+    background: #1c1c1c; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -560,7 +563,7 @@ form button:active {
     transition: color 0.3s ease;
 }
 .social-link:hover i {
-    color: #ffffff; /* Ensure the icon remains white on hover */
+    color: #ffffff;
 }
 /* Responsive Adjustments for Mobile (OnePlus Nord 4) */
 @media screen and (max-width: 1080px) {
