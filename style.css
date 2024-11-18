@@ -37,6 +37,7 @@ body {
 }
 .logo a{
     text-decoration: none;
+    display: flex;
     align-items: center;
     color: #00bcd4;
     margin: 0px 10px;
