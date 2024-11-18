@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/* General Reset */
+/* Genreral Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,57 +7,54 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Electric Charcoal Theme Background */
 body {
     background-color: #121212;
     color: #ffffff;
     line-height: 1.6;
 }
 
-/* Navigation Bar */
-.navbar {
+/* Navbar */
+
+.navbar{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 32px;
+    justify-content: space-around;
     background-color: #121212;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    font-family: 'Poppins', sans-serif; /* New Font */
+    align-items: center;
 }
 
-/* Left Side - Name */
-.navbar .logo {
-    font-size: 30px;
-    font-weight: 600; /* Use bold weight for the logo */
+.nav-links{
     color: #00bcd4;
-    margin-left: 40px;
-}
-
-/* Right Side - Navigation Links */
-.navbar .nav-links {
     list-style: none;
     display: flex;
-    gap: 60px;
-    font-weight: 600; /* Regular weight for links */
+    gap: 18px;
+    font-size: 1.1em;
+    padding: 50px 340px;
 }
-.navbar .nav-links li a {
-    color: #00bcd4;
+.nav-links li a{
     text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
+    color: #00bcd4;
+    font-weight: bold;
 }
-.navbar .nav-links li a:hover {
-    color: #ffffff;
+.logo a{
+    text-decoration: none;
+    align-items: center;
+    color: #00bcd4;
+    margin: 0px 10px;
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 320px;
+    font-size: 1.5em;
 }
 
-/* Page Sections */
+.navbar .nav-links li a:hover, .logo:hover {
+    color: #d8f8fc;
+} 
+
 section {
     padding: 48px 32px;
     max-width: 800px;
     margin: 0 auto;
 }
+
 section h1 {
     text-align: center;
     font-size: 40px;
@@ -66,7 +62,6 @@ section h1 {
     margin-bottom: 16px;
 }
 
-/* About Section Layout */
 .about-section {
     display: flex;
     align-items: center;
@@ -74,17 +69,7 @@ section h1 {
     padding: 48px 32px;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-/* Left Side: About Content */
-.about-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 48px 32px;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 50px; /* Add spacing between text and image */
+    gap: 50px;
 }
 
 .about-content .subtitle {
@@ -94,19 +79,22 @@ section h1 {
     font-family: 'poppins', sans-serif;
 }
 
-.description .subtitle{
+.description .subtitle {
     position: relative;
     right: 0px;
 }
+
 .about-content h1 {
     font-size: 40px;
     color: #ffffff;
     margin: 16px;
 }
+
 .about-content h1 .highlight {
     color: #00bcd4;
     font-family: 'poppins', sans-serif;
 }
+
 .about-content .description {
     font-size: 20px;
     color: #b0bec5;
@@ -114,18 +102,18 @@ section h1 {
     font-family: 'poppins', sans-serif;
     width: 550px;
 }
-.about-content{
+
+.about-content {
     position: relative;
     right: 55px;
     top: 35px;
 }
-.profile-image{
+
+.profile-image {
     position: relative;
     left: 20px;
 }
 
-
-/* Right Side: Profile Image */
 .profile-image {
     border: 5px solid #00bcd4;
     border-radius: 50%;
@@ -133,6 +121,7 @@ section h1 {
     width: 500px;
     height: 500px;
 }
+
 .profile-image img {
     width: 100%;
     height: 100%;
@@ -140,7 +129,7 @@ section h1 {
     border-radius: 50%;
 }
 
-/* Skills Section */
+/* Skills Page */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -149,20 +138,20 @@ section h1 {
     padding-top: 16px;
 }
 
-#skl{
+#skl {
     font-family: 'poppins', sans-serif;
     color: #b0bec5;
     font-size: 20px;
 }
-#hd{
+
+#hd {
     font-family: 'poppins', sans-serif;
 }
 
-/* Skill Box Default Style */
 .skill {
-    background-color: #1c1c1c; /* Default dark background */
-    border-radius: 10px; /* Rounded corners */
-    width: 125px; /* Square box */
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    width: 125px;
     height: 125px;
     display: flex;
     justify-content: center;
@@ -170,16 +159,15 @@ section h1 {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth hover effects */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
     font-family: 'poppins', sans-serif;
     color: #b0bec5;
 }
 
-/* Apply Different Gradient Animations for Each Skill */
 .skill:nth-child(1):hover {
-    animation: gradient-animation-html 6s ease infinite; /* Smoother easing and longer duration */
-    transform: scale(1.1); /* Slight scaling effect */
-    box-shadow: 0px 4px 15px rgba(228, 77, 38, 0.5); /* Subtle shadow */
+    animation: gradient-animation-html 6s ease infinite;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(228, 77, 38, 0.5);
 }
 
 .skill:nth-child(2):hover {
@@ -200,7 +188,11 @@ section h1 {
     box-shadow: 0px 4px 15px rgba(55, 118, 171, 0.5);
 }
 
-/* HTML Gradient Animation */
+#skl{
+    display: flex;
+    justify-content: center;
+}
+
 @keyframes gradient-animation-html {
     0% {
         background: linear-gradient(135deg, #e44d26, #f16529);
@@ -213,7 +205,6 @@ section h1 {
     }
 }
 
-/* CSS Gradient Animation */
 @keyframes gradient-animation-css {
     0% {
         background: linear-gradient(135deg, #2965f1, #33ccff);
@@ -226,7 +217,6 @@ section h1 {
     }
 }
 
-/* C Gradient Animation */
 @keyframes gradient-animation-c {
     0% {
         background: linear-gradient(135deg, #555555, #0078d7);
@@ -239,7 +229,6 @@ section h1 {
     }
 }
 
-/* Python Gradient Animation */
 @keyframes gradient-animation-python {
     0% {
         background: linear-gradient(135deg, #3776ab, #ffd343);
@@ -251,7 +240,8 @@ section h1 {
         background: linear-gradient(135deg, #3776ab, #ffd343);
     }
 }
-/* Education Section */
+
+/* Education Section  */
 .education-section {
     text-align: center;
     padding: 50px 20px;
@@ -264,7 +254,6 @@ section h1 {
     font-family: 'poppins', sans-serif;
 }
 
-/* Education Container */
 .education-container {
     display: flex;
     flex-direction: column;
@@ -294,14 +283,12 @@ section h1 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
-/* Education Item Icon */
 .education-item i {
     font-size: 40px;
     color: #00bcd4;
     flex-shrink: 0;
 }
 
-/* Education Item Text */
 .education-item h2 {
     font-size: 24px;
     font-family: 'poppins', sans-serif;
@@ -309,23 +296,14 @@ section h1 {
     margin: 0;
 }
 
-#clg{
+#clg {
     color: #b0bec5;
     margin: 5px 0 0 0;
     margin-left: 140px;
 }
 
-
-/* Contact Form Section */
-section {
-    text-align: center;
-    padding: 50px 20px;
-    font-family: 'poppins', sans-serif;
-    color: #b0bec5;
-}
-
-section h1 {
-    font-size: 40px;
+.heading .highlight {
+    font-size: 50px;
     color: #00bcd4;
     margin-bottom: 30px;
     text-transform: uppercase;
@@ -333,7 +311,6 @@ section h1 {
     font-family: 'poppins', sans-serif;
 }
 
-/* Contact Form */
 form {
     display: flex;
     flex-direction: column;
@@ -352,7 +329,6 @@ form:hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
 }
 
-/* Form Labels */
 form label {
     font-size: 18px;
     color: #00bcd4;
@@ -360,7 +336,6 @@ form label {
     text-align: left;
 }
 
-/* Input Fields */
 form input, form textarea {
     padding: 15px;
     border: 2px solid #00bcd4;
@@ -377,7 +352,6 @@ form input:focus, form textarea:focus {
     outline: none;
 }
 
-/* Submit Button */
 form button {
     padding: 15px;
     font-size: 18px;
@@ -401,11 +375,11 @@ form button:active {
     transform: translateY(0);
     box-shadow: none;
 }
-.lbl{
+
+.lbl {
     font-family: 'poppins', sans-serif;
 }
 
-/* Profile Image Styling */
 .profile-image {
     border: 5px solid #00bcd4;
     border-radius: 50%;
@@ -414,13 +388,13 @@ form button:active {
     height: 500px;
     margin-top: 150px;
 }
+
 .profile-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-/* Social Links Section */
 .social-section {
     text-align: center;
     padding: 48px 32px;
@@ -434,7 +408,7 @@ form button:active {
     font-family: 'poppins', sans-serif;
 }
 
-.social-section p{
+.social-section p {
     font-family: 'poppins', sans-serif;
     color: #b0bec5;
     font-size: 16px;
@@ -448,7 +422,6 @@ form button:active {
     margin-top: 15px;
 }
 
-/* Default Style for Social Links */
 .social-link {
     display: inline-block;
     padding: 20px;
@@ -458,35 +431,31 @@ form button:active {
     text-decoration: none;
     font-size: 40px;
     color: #ffffff;
-    background: #1c1c1c; 
+    background: #1c1c1c;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: transform 0.6s ease, box-shadow 0.6s ease;
 }
 
-/* Instagram Hover with Smooth Animated Gradient */
 .social-link.instagram:hover {
     animation: gradient-animation-instagram 6s ease infinite;
     transform: scale(1.1);
     box-shadow: 0 6px 20px rgba(245, 133, 41, 0.8);
 }
 
-/* GitHub Hover with Smooth Animated Gradient */
 .social-link.github:hover {
     animation: gradient-animation-github 6s ease infinite;
     transform: scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
 }
 
-/* LinkedIn Hover with Smooth Animated Gradient */
 .social-link.linkedin:hover {
     animation: gradient-animation-linkedin 6s ease infinite;
     transform: scale(1.1);
     box-shadow: 0 6px 20px rgba(0, 119, 181, 0.8);
 }
 
-/* Instagram Gradient Animation */
 @keyframes gradient-animation-instagram {
     0% {
         background: linear-gradient(90deg, #f58529, #dd2a7b, #8134af, #515bd4);
@@ -510,7 +479,6 @@ form button:active {
     }
 }
 
-/* GitHub Gradient Animation */
 @keyframes gradient-animation-github {
     0% {
         background: linear-gradient(90deg, #000000, #333333, #555555, #777777);
@@ -534,7 +502,6 @@ form button:active {
     }
 }
 
-/* LinkedIn Gradient Animation */
 @keyframes gradient-animation-linkedin {
     0% {
         background: linear-gradient(90deg, #0077b5, #005f9e, #004e87, #0077b5);
@@ -558,115 +525,109 @@ form button:active {
     }
 }
 
-/* Icon Styling */
 .social-link i {
     transition: color 0.3s ease;
 }
+
 .social-link:hover i {
     color: #ffffff;
 }
-/* Responsive Adjustments for Mobile (OnePlus Nord 4) */
+
 @media screen and (max-width: 1080px) {
-    /* Navbar */
     .navbar {
-        flex-direction: row; /* Ensure items remain in a row */
-        justify-content: space-between; /* Align logo to the left and links to the right */
+        flex-direction: row;
+        justify-content: space-between;
         align-items: center;
-        padding: 16px 8px; /* Adjust padding */
+        padding: 16px 8px;
     }
 
     .navbar .nav-links {
-        flex-direction: row; /* Keep navigation links horizontal */
-        gap: 16px; /* Reduce gap between links */
+        flex-direction: row;
+        gap: 16px;
     }
 
     .navbar .nav-links li a {
-        font-size: 14px; /* Adjust font size for links */
+        font-size: 14px;
     }
 
-    /*About section*/
     .about-section {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center align content */
+        flex-direction: column;
+        align-items: center;
     }
 
     .profile-image {
-        order: -1; /* Move the image to the top */
-        max-width: 200px; /* Adjust image size for smaller screens */
+        order: -1;
+        max-width: 200px;
         height: auto;
-        margin-bottom: 16px; /* Add spacing below the image */
+        margin-bottom: 16px;
     }
 
     .about-content {
-        order: 1; /* Keep text below the image */
-        text-align: center; /* Center-align text */
-        margin: 0; /* Remove additional margins */
-        padding: 0 16px; /* Add some padding for better readability */
+        order: 1;
+        text-align: center;
+        margin: 0;
+        padding: 0 16px;
     }
-    
-    /* Skills Section */
+
     .skills-container {
-        flex-direction: column; /* Stack skills vertically */
-        gap: 16px; /* Add spacing between skill boxes */
-        padding: 16px; /* Reduce padding */
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
     }
 
     .skill {
-        width: 90%; /* Full width for skill boxes */
+        width: 90%;
         height: auto;
-        font-size: 24px; /* Adjust font size for icons/text */
-        margin: 0 auto; /* Center the skill boxes */
+        font-size: 24px;
+        margin: 0 auto;
     }
 
-    /* Education Section */
     .education-container {
-        flex-direction: column; /* Stack items vertically */
-        gap: 24px; /* Add spacing between education items */
-        padding: 16px; /* Adjust padding */
+        flex-direction: column;
+        gap: 24px;
+        padding: 16px;
     }
 
     .education-item {
-        text-align: center; /* Center-align education content */
-        width: 90%; /* Reduce width for smaller screens */
-        margin: 0 auto; /* Center the items */
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
     }
 
     .education-item h2 {
-        font-size: 18px; /* Adjust heading size */
+        font-size: 18px;
     }
 
     .education-item p {
-        font-size: 14px; /* Adjust paragraph size */
+        font-size: 14px;
     }
 
-    /* Contact Section */
     form {
-        width: 90%; /* Adjust width for smaller screens */
-        padding: 16px; /* Adjust padding */
-        margin: 0 auto; /* Center the form */
+        width: 90%;
+        padding: 16px;
+        margin: 0 auto;
     }
 
     form label {
-        font-size: 14px; /* Adjust label size */
+        font-size: 14px;
     }
 
     form input, form textarea {
-        font-size: 14px; /* Adjust input font size */
+        font-size: 14px;
     }
 
     form button {
-        font-size: 16px; /* Adjust button font size */
+        font-size: 16px;
     }
 
-    /* Social Links Section */
     .social-icons {
-        flex-direction: column; /* Stack icons vertically */
-        gap: 16px; /* Add spacing between icons */
+        flex-direction: column;
+        gap: 16px;
     }
 
     .social-link {
-        width: 60px; /* Adjust size of social boxes */
+        width: 60px;
         height: 60px;
-        font-size: 20px; /* Adjust icon size */
+        font-size: 20px;
     }
 }
