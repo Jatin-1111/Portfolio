@@ -26,69 +26,63 @@ body {
     color: #00bcd4;
     list-style: none;
     display: flex;
-    gap: 18px;
-    font-size: 1.1em;
-    padding: 50px 340px;
+    justify-content: center;
+    gap: 36px;
+    font-size: 1.05em;
+    width: 700px;
+    position: relative;
+    right: 150px;
 }
 .nav-links li a{
     text-decoration: none;
     color: #00bcd4;
     font-weight: bold;
+    font-size: 1.2em;
 }
 .logo a{
     text-decoration: none;
     display: flex;
     align-items: center;
     color: #00bcd4;
-    margin: 0px 10px;
+    /* margin: 0px 8px; */
+    width: 690px;
     font-family: 'Poppins', sans-serif;
     padding: 50px 320px;
     font-size: 1.5em;
+    position: relative;
+    right: 150px;
 }
 
 .navbar .nav-links li a:hover, .logo:hover {
     color: #d8f8fc;
 } 
 
-section {
-    padding: 48px 32px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-section h1 {
+.about-content h1 {
     text-align: center;
     font-size: 40px;
     color: #00bcd4;
     margin-bottom: 16px;
+    color: #ffffff;
+    margin: 16px;
 }
 
-.about-section {
+.about-section{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 48px 32px;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 50px;
+    justify-content: center;
+    gap: 180px;    
 }
 
-.about-content .subtitle {
+.about-content{
+    height: 100vh;
+    width: 30vw;
     font-size: 20px;
     color: #b0bec5;
     text-align: justify;
     font-family: 'poppins', sans-serif;
-}
-
-.description .subtitle {
     position: relative;
-    right: 0px;
-}
-
-.about-content h1 {
-    font-size: 40px;
-    color: #ffffff;
-    margin: 16px;
+    right: 20px;
+    top: 200px;
 }
 
 .about-content h1 .highlight {
@@ -96,24 +90,6 @@ section h1 {
     font-family: 'poppins', sans-serif;
 }
 
-.about-content .description {
-    font-size: 20px;
-    color: #b0bec5;
-    text-align: justify;
-    font-family: 'poppins', sans-serif;
-    width: 550px;
-}
-
-.about-content {
-    position: relative;
-    right: 55px;
-    top: 35px;
-}
-
-.profile-image {
-    position: relative;
-    left: 20px;
-}
 
 .profile-image {
     border: 5px solid #00bcd4;
@@ -121,32 +97,37 @@ section h1 {
     overflow: hidden;
     width: 500px;
     height: 500px;
+    position: relative;
+    bottom: 100px;
 }
 
 .profile-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
 }
 
 /* Skills Page */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
     justify-content: center;
-    padding-top: 16px;
+    gap: 1em;
+    padding-top: 1.2em;
 }
 
-#skl {
-    font-family: 'poppins', sans-serif;
+.heading{
+    text-align: center;
+    color: #00bcd4;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#skl{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
     color: #b0bec5;
     font-size: 20px;
-}
-
-#hd {
-    font-family: 'poppins', sans-serif;
 }
 
 .skill {
@@ -189,10 +170,6 @@ section h1 {
     box-shadow: 0px 4px 15px rgba(55, 118, 171, 0.5);
 }
 
-#skl{
-    display: flex;
-    justify-content: center;
-}
 
 @keyframes gradient-animation-html {
     0% {
@@ -242,26 +219,26 @@ section h1 {
     }
 }
 
-/* Education Section  */
+/* Education Section */
 .education-section {
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
 }
 
 .education-section h1 {
     font-size: 40px;
     color: #00bcd4;
-    margin-bottom: 40px;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
 }
 
+/* EDUCATION CONTAINER */
 .education-container {
     display: flex;
     flex-direction: column;
-    gap: 32px;
     align-items: center;
-    margin: 0 auto;
-    font-family: 'poppins', sans-serif;
+    gap: 32px;
+    margin: 20px auto;
 }
 
 .education-item {
@@ -271,12 +248,11 @@ section h1 {
     padding: 20px 40px;
     max-width: 700px;
     width: 100%;
-    text-align: left;
-    color: #b0bec5;
     display: flex;
     align-items: center;
     gap: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #b0bec5;
 }
 
 .education-item:hover {
@@ -287,31 +263,21 @@ section h1 {
 .education-item i {
     font-size: 40px;
     color: #00bcd4;
-    flex-shrink: 0;
 }
 
 .education-item h2 {
-    font-size: 24px;
-    font-family: 'poppins', sans-serif;
-    color: #b0bec5;
     margin: 0;
-}
-
-#clg {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
     color: #b0bec5;
-    margin: 5px 0 0 0;
-    margin-left: 140px;
 }
 
-.heading .highlight {
-    font-size: 50px;
-    color: #00bcd4;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-family: 'poppins', sans-serif;
+.education-item p {
+    margin: 5px 0 0;
+    color: #e0e0e0;
 }
 
+/* CONTACT SECTION */
 form {
     display: flex;
     flex-direction: column;
@@ -381,21 +347,7 @@ form button:active {
     font-family: 'poppins', sans-serif;
 }
 
-.profile-image {
-    border: 5px solid #00bcd4;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 500px;
-    height: 500px;
-    margin-top: 150px;
-}
-
-.profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
+/* SOCIAL SECTION  */
 .social-section {
     text-align: center;
     padding: 48px 32px;
@@ -532,103 +484,4 @@ form button:active {
 
 .social-link:hover i {
     color: #ffffff;
-}
-
-@media screen and (max-width: 1080px) {
-    .navbar {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px 8px;
-    }
-
-    .navbar .nav-links {
-        flex-direction: row;
-        gap: 16px;
-    }
-
-    .navbar .nav-links li a {
-        font-size: 14px;
-    }
-
-    .about-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-image {
-        order: -1;
-        max-width: 200px;
-        height: auto;
-        margin-bottom: 16px;
-    }
-
-    .about-content {
-        order: 1;
-        text-align: center;
-        margin: 0;
-        padding: 0 16px;
-    }
-
-    .skills-container {
-        flex-direction: column;
-        gap: 16px;
-        padding: 16px;
-    }
-
-    .skill {
-        width: 90%;
-        height: auto;
-        font-size: 24px;
-        margin: 0 auto;
-    }
-
-    .education-container {
-        flex-direction: column;
-        gap: 24px;
-        padding: 16px;
-    }
-
-    .education-item {
-        text-align: center;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .education-item h2 {
-        font-size: 18px;
-    }
-
-    .education-item p {
-        font-size: 14px;
-    }
-
-    form {
-        width: 90%;
-        padding: 16px;
-        margin: 0 auto;
-    }
-
-    form label {
-        font-size: 14px;
-    }
-
-    form input, form textarea {
-        font-size: 14px;
-    }
-
-    form button {
-        font-size: 16px;
-    }
-
-    .social-icons {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .social-link {
-        width: 60px;
-        height: 60px;
-        font-size: 20px;
-    }
 }
