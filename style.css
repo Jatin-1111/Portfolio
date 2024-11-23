@@ -148,6 +148,15 @@ body {
     padding-top: 1.2em;
 }
 
+.skillspage, .contactpage{
+    position: relative;
+    top: 100px;
+}
+.education-container, .education-section, .social-section{
+    position: relative;
+    top: 50px;
+}
+
 .heading{
     text-align: center;
     color: #00bcd4;
