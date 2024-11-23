@@ -255,6 +255,11 @@ body {
     .skillspage{
         position: relative;
         top: 100px;
+        margin: 10px;
+    }
+    .skill {
+        width: 80px;
+        height: 80px;
     }
 }
 
