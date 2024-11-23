@@ -17,7 +17,7 @@ body {
 .navbar{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around center;
+    justify-content: space-around;
     align-items: center;
     background-color: #121212;
     height: 14vh;
@@ -104,7 +104,7 @@ body {
         align-items: center;
         background-color: #121212;
         height: 14vh;
-        width: 100%;
+        width: 100vw;
         gap: 50px;
     }
     .nav-links{
@@ -254,7 +254,7 @@ body {
 @media screen and (max-width: 450px) {
     .skillspage{
         position: relative;
-        top: 200px;
+        top: 100px;
         margin: 10px;
     }
     .skill {
