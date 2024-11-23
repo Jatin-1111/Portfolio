@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Genreral Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.education-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.education-section h1 {
+    font-size: 40px;
+    color: #00bcd4;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin: 20px auto;
+}
+
+.education-item {
+    background: linear-gradient(135deg, #1c1c1c, #333);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px 40px;
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #b0bec5;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.education-item i {
+    font-size: 40px;
+    color: #00bcd4;
+}
+
+.education-item h2 {
+    margin: 0;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: #b0bec5;
+}
+
+.education-item p {
+    margin: 5px 0 0;
+    color: #e0e0e0;
+}
+
+.education-item p {
+    margin: 5px 0 0;
+    color: #e0e0e0;
+}
+
+@media screen and (max-width: 450px) {
+    .education-container, .education-section{
+        position: relative;
+        top: 100px;
+        margin: 10px;
+    }
+}

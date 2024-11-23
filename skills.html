@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/skills.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="/css/hamburger.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
 
 </head>
 <body>
     <nav class="navbar">
         <span class="logo"><a href="index.html">Jatin</a></span>
-        <div class="hamburger">
+        <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
             <span></span>
         </div>
-        <ul class="nav-links">
+        <ul class="nav-links" id="nav-links">
             <li><a href="index.html">About Me</a></li>
             <li><a href="social.html">Social Media</a></li>
             <li><a href="skills.html">Skills</a></li>
             <li><a href="education.html">Education</a></li>
             <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        </ul>        
+    </nav> 
     <section class="skillspage">
         <h1 class="heading">Skills</h1>
         <p id="skl">These are the skills I have acquired over the years.</p>
@@ -41,7 +44,8 @@
                 <i class="fab fa-python"></i>
             </div>
         </div>
-    </section> 
+    </section>
     <script src="script.js"></script>
+    <script src="hamburger.js"></script>
 </body>
 </html>

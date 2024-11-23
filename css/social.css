@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Genreral Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.social-section {
+    text-align: center;
+    padding: 48px 32px;
+    color: #ffffff;
+}
+
+.social-section h1 {
+    font-size: 40px;
+    color: #00bcd4;
+    margin-bottom: 16px;
+    font-family: 'poppins', sans-serif;
+}
+
+.social-section p {
+    font-family: 'poppins', sans-serif;
+    color: #b0bec5;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 15px;
+}
+
+.social-link {
+    display: inline-block;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 40px;
+    color: #ffffff;
+    background: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.social-link.instagram:hover {
+    animation: gradient-animation-instagram 6s ease infinite;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(245, 133, 41, 0.8);
+}
+
+.social-link.github:hover {
+    animation: gradient-animation-github 6s ease infinite;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+}
+
+.social-link.linkedin:hover {
+    animation: gradient-animation-linkedin 6s ease infinite;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 119, 181, 0.8);
+}
+
+@keyframes gradient-animation-instagram {
+    0% {
+        background: linear-gradient(90deg, #f58529, #dd2a7b, #8134af, #515bd4);
+        background-size: 400% 400%;
+    }
+    25% {
+        background: linear-gradient(90deg, #dd2a7b, #8134af, #515bd4, #f58529);
+        background-size: 400% 400%;
+    }
+    50% {
+        background: linear-gradient(90deg, #8134af, #515bd4, #f58529, #dd2a7b);
+        background-size: 400% 400%;
+    }
+    75% {
+        background: linear-gradient(90deg, #515bd4, #f58529, #dd2a7b, #8134af);
+        background-size: 400% 400%;
+    }
+    100% {
+        background: linear-gradient(90deg, #f58529, #dd2a7b, #8134af, #515bd4);
+        background-size: 400% 400%;
+    }
+}
+
+@keyframes gradient-animation-github {
+    0% {
+        background: linear-gradient(90deg, #000000, #333333, #555555, #777777);
+        background-size: 400% 400%;
+    }
+    25% {
+        background: linear-gradient(90deg, #333333, #555555, #777777, #000000);
+        background-size: 400% 400%;
+    }
+    50% {
+        background: linear-gradient(90deg, #555555, #777777, #000000, #333333);
+        background-size: 400% 400%;
+    }
+    75% {
+        background: linear-gradient(90deg, #777777, #000000, #333333, #555555);
+        background-size: 400% 400%;
+    }
+    100% {
+        background: linear-gradient(90deg, #000000, #333333, #555555, #777777);
+        background-size: 400% 400%;
+    }
+}
+
+@keyframes gradient-animation-linkedin {
+    0% {
+        background: linear-gradient(90deg, #0077b5, #005f9e, #004e87, #0077b5);
+        background-size: 400% 400%;
+    }
+    25% {
+        background: linear-gradient(90deg, #005f9e, #004e87, #0077b5, #005f9e);
+        background-size: 400% 400%;
+    }
+    50% {
+        background: linear-gradient(90deg, #004e87, #0077b5, #005f9e, #004e87);
+        background-size: 400% 400%;
+    }
+    75% {
+        background: linear-gradient(90deg, #0077b5, #004e87, #005f9e, #0077b5);
+        background-size: 400% 400%;
+    }
+    100% {
+        background: linear-gradient(90deg, #005f9e, #0077b5, #004e87, #005f9e);
+        background-size: 400% 400%;
+    }
+}
+
+.social-link i {
+    transition: color 0.3s ease;
+}
+
+.social-link:hover i {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 450px) {
+    .social-section{
+        position: relative;
+        top: 100px;
+    }
+    .social-section p{
+        font-size: 0.8em;
+    }
+}

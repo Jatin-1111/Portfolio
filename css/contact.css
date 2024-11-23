@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Genreral Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: linear-gradient(135deg, #1c1c1c, #333);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+}
+
+form label {
+    font-size: 18px;
+    color: #00bcd4;
+    font-weight: bold;
+    text-align: left;
+}
+
+form input, form textarea {
+    padding: 15px;
+    border: 2px solid #00bcd4;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #1c1c1c;
+    color: #ffffff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #66d4e8;
+    box-shadow: 0 0 5px rgba(102, 212, 232, 0.8);
+    outline: none;
+}
+
+form button {
+    padding: 15px;
+    font-size: 18px;
+    background: linear-gradient(135deg, #00bcd4, #66d4e8);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(135deg, #66d4e8, #00bcd4);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(102, 212, 232, 0.5);
+}
+
+form button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.lbl {
+    font-family: 'poppins', sans-serif;
+}
+
+@media screen and (max-width: 450px) {
+    .contactpage{
+        position: relative;
+        top: 100px;
+        margin: 10px;
+    }
+}

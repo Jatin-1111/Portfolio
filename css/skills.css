@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Genreral Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    padding-top: 1.2em;
+}
+
+.skillspage, .contactpage{
+    position: relative;
+    top: 100px;
+}
+.education-container, .education-section, .social-section{
+    position: relative;
+    top: 50px;
+}
+
+.heading{
+    text-align: center;
+    color: #00bcd4;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#skl{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #b0bec5;
+    font-size: 20px;
+}
+
+.skill {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    width: 125px;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    font-family: 'poppins', sans-serif;
+    color: #b0bec5;
+}
+
+.skill:nth-child(1):hover {
+    animation: gradient-animation-html 6s ease infinite;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(228, 77, 38, 0.5);
+}
+
+.skill:nth-child(2):hover {
+    animation: gradient-animation-css 6s ease infinite;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(41, 101, 241, 0.5);
+}
+
+.skill:nth-child(3):hover {
+    animation: gradient-animation-c 6s ease infinite;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(85, 85, 85, 0.5);
+}
+
+.skill:nth-child(4):hover {
+    animation: gradient-animation-python 6s ease infinite;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(55, 118, 171, 0.5);
+}
+
+
+@keyframes gradient-animation-html {
+    0% {
+        background: linear-gradient(135deg, #e44d26, #f16529);
+    }
+    50% {
+        background: linear-gradient(135deg, #f16529, #e44d26);
+    }
+    100% {
+        background: linear-gradient(135deg, #e44d26, #f16529);
+    }
+}
+
+@keyframes gradient-animation-css {
+    0% {
+        background: linear-gradient(135deg, #2965f1, #33ccff);
+    }
+    50% {
+        background: linear-gradient(135deg, #33ccff, #2965f1);
+    }
+    100% {
+        background: linear-gradient(135deg, #2965f1, #33ccff);
+    }
+}
+
+@keyframes gradient-animation-c {
+    0% {
+        background: linear-gradient(135deg, #555555, #0078d7);
+    }
+    50% {
+        background: linear-gradient(135deg, #0078d7, #555555);
+    }
+    100% {
+        background: linear-gradient(135deg, #555555, #0078d7);
+    }
+}
+
+@keyframes gradient-animation-python {
+    0% {
+        background: linear-gradient(135deg, #3776ab, #ffd343);
+    }
+    50% {
+        background: linear-gradient(135deg, #ffd343, #3776ab);
+    }
+    100% {
+        background: linear-gradient(135deg, #3776ab, #ffd343);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .skillspage{
+        position: relative;
+        top: 100px;
+        margin: 10px;
+    }
+    .skill {
+        width: 80px;
+        height: 80px;
+    }
+}
