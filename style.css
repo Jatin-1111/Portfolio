@@ -111,8 +111,8 @@ body {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        gap: 15px;
-        font-size: 0.9em;
+        gap: 10px;
+        font-size: 0.8em;
     }
     .about-content{
         width: 90vw;
