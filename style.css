@@ -143,9 +143,8 @@ body {
 /* Skills Page */
 .skills-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 1em;
+    gap: 1.5em;
     padding-top: 1.2em;
 }
 
@@ -316,6 +315,11 @@ body {
     color: #e0e0e0;
 }
 
+.education-item p {
+    margin: 5px 0 0;
+    color: #e0e0e0;
+}
+
 @media screen and (max-width: 450px) {
     .education-container, .education-section{
         position: relative;
@@ -398,11 +402,7 @@ form button:active {
     .contactpage{
         position: relative;
         top: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 10px;
+        margin: 10px;
     }
 }
 
