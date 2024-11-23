@@ -383,6 +383,13 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .main-heading{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .about-section{
