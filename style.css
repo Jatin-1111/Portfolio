@@ -254,7 +254,7 @@ body {
 @media screen and (max-width: 450px) {
     .skillspage{
         position: relative;
-        top: 100px;
+        top: 200px;
         margin: 10px;
     }
     .skill {
