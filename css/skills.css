@@ -73,12 +73,18 @@ body {
 }
 
 .skill:nth-child(3):hover {
+    animation: gradient-animation-js 6s ease infinite;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 15px rgba(241, 196, 15, 0.5);
+}
+
+.skill:nth-child(4):hover {
     animation: gradient-animation-c 6s ease infinite;
     transform: scale(1.1);
     box-shadow: 0px 4px 15px rgba(85, 85, 85, 0.5);
 }
 
-.skill:nth-child(4):hover {
+.skill:nth-child(5):hover {
     animation: gradient-animation-python 6s ease infinite;
     transform: scale(1.1);
     box-shadow: 0px 4px 15px rgba(55, 118, 171, 0.5);
@@ -106,6 +112,29 @@ body {
     }
     100% {
         background: linear-gradient(135deg, #2965f1, #33ccff);
+    }
+}
+
+@keyframes gradient-animation-js {
+    0% {
+        background: linear-gradient(45deg, #f7df1e, #e8c547);
+        color: #000;
+    }
+    25% {
+        background: linear-gradient(45deg, #f7df1e, #ffe800);
+        color: #333;
+    }
+    50% {
+        background: linear-gradient(45deg, #f9e91d, #facf00);
+        color: #555;
+    }
+    75% {
+        background: linear-gradient(45deg, #ffe800, #e8c547);
+        color: #000;
+    }
+    100% {
+        background: linear-gradient(45deg, #f7df1e, #e8c547);
+        color: #000;
     }
 }
 
