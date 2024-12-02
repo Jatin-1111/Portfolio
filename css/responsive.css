@@ -72,7 +72,8 @@
         border-radius: 100%;
     }
     .skills-container {
-        flex-direction: column;
+        flex-direction: flex;
+        flex-wrap: wrap;
         gap: 10px;
     }
     .skill {
@@ -139,7 +140,8 @@
         border-radius: 100%;
     }
     .skills-container {
-        flex-direction: column;
+        flex-direction: flex;
+        flex-wrap: wrap;
         gap: 12px;
     }
     .skill {
@@ -252,9 +254,8 @@
         position: relative;
         bottom: 0px;
         font-size: 1.5em;
-        text-align: center;
     }
-    
+
     .subtitle{
         display: flex;
         flex-direction: row;
